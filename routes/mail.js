@@ -6,7 +6,7 @@ router.post('/', (req, res) => {
     const {
         emailHost,
         email,
-        subject,
+        
         message,
         name
     } = req.body
@@ -16,15 +16,15 @@ router.post('/', (req, res) => {
         host: 'mail.zenhosting.tn',
         secure:false,
         auth: {
-            user: 'contact@hatemattia.tn',
-            pass: '5549567119970Tt'
+            user: 'bassmaatia@gmail.com',
+            pass: '@25603243Basma'
         }
     });
 
     var mailOptions = {
         from: email,
         to: emailHost,
-        subject: "email from " + email + "name" + name + " about " + subject,
+        subject: "email from " + email + "name" + name ,
         text: message
     };
 
